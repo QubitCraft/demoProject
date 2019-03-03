@@ -1,0 +1,16 @@
+.sub-header-wrap{
+    background-color: #fff;
+}
+.sub-header-wrap {
+    padding: 12px 0px 5px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 5px #eee;
+    margin-top: 51px;
+}
+.sub-header-wrap ul li a {
+    padding: 0px 10px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}

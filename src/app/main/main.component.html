@@ -1,0 +1,33 @@
+<div class="main bg-white">
+    <h3 class="product-heading pad-10">Mi Mobiles <span>(Showing 1 – 24 products of 147 products)</span></h3>
+    <div class="border-btm tab-section">
+        <ul class="list-inline">
+            <li><a href="javascript:void(0)">Sort By</a></li>
+            <li><a href="javascript:void(0)" class="tab-active">Popularity</a></li>
+            <li><a href="javascript:void(0)">Price -- Low to High</a></li>
+            <li><a href="javascript:void(0)">Price -- High to Low</a></li>
+            <li><a href="javascript:void(0)">Newest First</a></li>
+        </ul>
+    </div>
+    <section class="product-list-sec pad-15 border-btm"  *ngFor="let data of mainData">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                <img src="{{data.image}}" alt="prod-img" class="img-responsive img-center">
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <h3 class="prod-heading">
+                        <i class="fa fa-heart heart-custom" aria-hidden="true"></i>  {{data.heading}}
+                </h3>
+                <ul class="prod-description">
+                    <li  *ngFor="let list of data.lists"><a href="jaavscript:void(0)"> {{ list.description }} </a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                <div class="price-wrap">
+                    <b class="price"> {{data.price}}</b> 
+                    <img height="21" src="//img1a.flixcart.com/www/linchpin/fk-cp-zion/img/fa_8b4b59.png">
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

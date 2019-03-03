@@ -1,0 +1,32 @@
+<div class="sidebar bg-white">
+  <h4 class="pad-10 margin-0 border-btm">Filter</h4>
+  <section class="pad-10 border-btm">
+    <div class="checkbox">
+      <label>
+        <input type="checkbox" value=""><img height="21" src="//img1a.flixcart.com/www/linchpin/fk-cp-zion/img/fa_8b4b59.png" class="_2rIV_l">
+      </label>
+    </div>
+  </section>
+  <section class="pad-10 border-btm" *ngFor="let data of sidebarData; let i =index">
+    <div class="top-head" (click)="hideme[i] = !hideme[i]">
+      <div class="pull-left tp-heading">
+        {{ data.name }} 
+      </div>
+      <div class="pull-right pointer">
+        <i _ngcontent-c1="" aria-hidden="true" class="fa fa-angle-down" [ngClass]="{ 'up': hideme[i] = hideme[i]}"></i>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+    <div class="collapse-section"  [ngClass]="{ 'show': hideme[i] = hideme[i]}">
+      <ul class="left-sidebar">
+        <li *ngFor="let list of data.lists">
+          <a href="javascript:void(0)">
+            <div class="checkbox">
+              <label><input type="checkbox" value="">{{ list.name }}</label>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+</div>

@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0px;
+    padding:0px;
+}
+.margin-0{
+    margin:0px;
+}
+.paddding-lr{
+    padding: 0px 15px;
+}
+.pad-15{
+    padding: 15px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f1f3f6;
+}
+.bg-white{
+    background-color: #ffffff;
+}
+.border-btm{
+    border-bottom: 1px solid #ddd; 
+}
+.pad-10{
+    padding: 10px;
+}
+.pointer{
+    cursor:pointer;
+}
